@@ -15,13 +15,8 @@
 #++
 
 
-require 'test_helper'
+require 'test/unit'
+require 'rubygems'
+require 'active_support'
 
-
-class HelperfulTest < Test::Unit::TestCase
-
-  def test_this_plugin
-    # see single test files
-  end
-
-end
+$:.unshift File.dirname(__FILE__) + '/../lib'

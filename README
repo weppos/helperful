@@ -1,13 +1,74 @@
-Helperful
-=========
+= Helperful
 
-Introduction goes here.
-
-
-Example
-=======
-
-Example goes here.
+Helperful aims to be a collection of useful and reusable Rails helpers.
 
 
-Copyright (c) 2008 [name of plugin creator], released under the MIT license
+== Getting Started
+
+Helper methods are grouped into different files according to their scope.
+
+Before using an helper method you should include the helper file in your Rails application,
+exactly how you would proceed to include a default Rails helper.
+
+  class MyController < ApplicationController
+
+    # include the title_helper helper collection
+    helper :title
+
+    # include the title_helper helper collection
+    # using the module name
+    helper TitleHelper
+
+  end
+
+See the Rails documentation for <tt>ActionController::Base#helper</tt> method
+for more details about how to include an helper into a Rails application.
+
+Once included, all helper methods are available in the View.
+
+  <html>
+    <title><%= title 'This is a title' %></title>
+    <body>
+      <%= yield %>
+    </body>
+  </html>
+
+
+== Helpers
+
+This is a short description of all available helpers.
+Please referer to the documentation available at the beginning of any helper file for further details.
+
+=== Title Helper
+
+Provides an helper for managing page title in Rails views and layouts.
+
+  # Include the helper in your controller.
+  # You might want to include it in ApplicationController to make it available
+  # to all controllers and actions.
+  class ApplicationController < ActionController::Base
+
+    helper :title
+
+  end
+
+  # Now you can use set a title in your action
+  # Example. index.html.rb
+  <h1><%= title 'This is a title' %></h1>
+
+  # And print the title with a :site decorator in your layout.
+  <html>
+    <title><%= title :site => 'My Cool Site!' %></title>
+    <body>
+      <%= yield %>
+    </body>
+  </html>
+
+Originally available at http://gist.github.com/3840.
+
+
+== Authors
+
+{Simone Carletti}[http://www.simonecarletti.com/] <weppos@weppos.net>
+
+If you like this software, consider to {recommend me}[http://www.workingwithrails.com/person/11967-simone-carletti] at Working with Rails.
