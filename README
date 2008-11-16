@@ -70,8 +70,6 @@ Provides an helper for managing page title in Rails views and layouts.
 Originally available at http://gist.github.com/3840.
 
 
-== Authors
+== Author
 
 {Simone Carletti}[http://www.simonecarletti.com/] <weppos@weppos.net>
-
-If you like this software, consider to {recommend me}[http://www.workingwithrails.com/person/11967-simone-carletti] at Working with Rails.
