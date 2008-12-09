@@ -1,5 +1,9 @@
 = Changelog
 
+== master
+
+* CHANGED: Renamed TitleHelper to HelperfulTitleHelper to prevent conflicts with other common helpers.
+
 
 == Release 0.1.0
 

@@ -16,11 +16,11 @@
 
 
 require 'test_helper'
-require 'title_helper'
+require 'helperful_title_helper'
 
 
 class TitleHelperTest < Test::Unit::TestCase
-  include TitleHelper
+  include HelperfulTitleHelper
 
   def setup
     reset!
