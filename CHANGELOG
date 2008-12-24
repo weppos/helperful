@@ -2,6 +2,8 @@
 
 == master
 
+* ADDED: Added HelperfulContentHelper module with #sidebar helper for passing content_for :sidebar to the layout. Even if this is a really simple method, this method adds a bit of semantic meaning to common application usage of content_for for created sidebars.
+
 * CHANGED: Renamed TitleHelper to HelperfulTitleHelper to prevent conflicts with other common helpers.
 
 
