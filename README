@@ -11,16 +11,18 @@ Helperful aims to be a collection of useful and reusable Rails helpers.
 Helper methods are grouped into different files according to their scope.
 
 Before using an helper method you should include the helper file in your Rails application,
-exactly how you would proceed to include a default Rails helper.
+as you would expected to do for a standard Rails helper.
+All helpers are prefixed by the helperful string to prevent conflicts 
+with current of future Rails versions.
 
   class MyController < ApplicationController
 
     # include the title_helper helper collection
-    helper :title
+    helper :helperful_title
 
     # include the title_helper helper collection
     # using the module name
-    helper TitleHelper
+    helper HelperfulTitleHelper
 
   end
 
