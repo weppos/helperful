@@ -1,8 +1,7 @@
 require 'test_helper'
-require 'helperful_affiliations_helper'
 
-class HelperfulAffiliationsHelperTest < ActionView::TestCase
-  include HelperfulAffiliationsHelper
+class AffiliationsHelperTest < ActionView::TestCase
+  tests Helperful::AffiliationsHelper
   
   def test_tradedoubler_verification_tag
     assert_equal('<!-- TradeDoubler site verification 112233 -->', tradedoubler_verification_tag('112233'))

@@ -1,8 +1,7 @@
 require 'test_helper'
-require 'helperful_title_helper'
 
-class TitleHelperTest < Test::Unit::TestCase
-  include HelperfulTitleHelper
+class HelperfulTitleHelperTest < ActionView::TestCase
+  tests Helperful::TitleHelper
 
   def setup
     reset!

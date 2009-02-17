@@ -1,11 +1,10 @@
 require 'test_helper'
-require 'helperful_content_helper'
 
 class ContentController < ActionController::Base
   def self.controller_name; "content"; end
   def self.controller_path; "content"; end
   
-  helper HelperfulContentHelper
+  helper Helperful::ContentHelper
   
   def sidebar
     render :layout => "content"
@@ -21,11 +20,10 @@ end
 ContentController.view_paths = [ File.dirname(__FILE__) + "/fixtures/" ]
 
 
-class CaptureTest < Test::Unit::TestCase
+class ContentTest < ActiveSupport::TestCase
   
   def setup
     @controller = ContentController.new
-    @controller.logger = Logger.new(nil)
     @request    = ActionController::TestRequest.new
     @response   = ActionController::TestResponse.new
 
