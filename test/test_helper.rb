@@ -15,8 +15,6 @@
 #++
 
 
-require 'yaml'
-require 'stringio'
 require 'test/unit'
 require 'rubygems'
 require 'active_support'

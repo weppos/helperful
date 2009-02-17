@@ -4,6 +4,10 @@
 
 * ADDED: Added HelperfulContentHelper module with #sidebar helper for passing content_for :sidebar to the layout. Even if this is a really simple method, this method adds a bit of semantic meaning to common application usage of content_for for created sidebars.
 
+* ADDED: Added HelperfulAffiliationsHelper module.
+
+* ADDED: Added HelperfulAffiliationsHelper#tradedoubler_verification_tag helper for generating Tradedoubler verifications tags.
+
 * CHANGED: Renamed TitleHelper to HelperfulTitleHelper to prevent conflicts with other common helpers.
 
 
