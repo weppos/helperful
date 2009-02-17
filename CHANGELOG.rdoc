@@ -8,6 +8,8 @@
 
 * ADDED: Added HelperfulAffiliationsHelper#tradedoubler_verification_tag helper for generating Tradedoubler verifications tags (subsequently renamed to Helperful::AffiliationsHelper).
 
+* ADDED: Added #helperful method as shortcut for including helper modules from the Helperful namespace.
+
 * CHANGED: Renamed TitleHelper to HelperfulTitleHelper to prevent conflicts with other common helpers (subsequently renamed to Helperful::TitleHelper).
 
 * CHANGED: Renamed all helper modules from HelperfulHelperName to Helperful::HelperName.

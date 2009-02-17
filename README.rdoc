@@ -28,6 +28,26 @@ Don't forget to add the namespace when including an helper from your controller.
 
   end
 
+
+Moreover, the <tt>Helperful</tt> library provides a helpful method called <tt>helperful</tt>. 
+It aliases the standard Rails <tt>ActionController::Base#helper</tt> method with the exception that it automatically prepends the <tt>helperful</tt> namespace when necessary.
+
+The following lines are equivalent:
+
+  helper    'helperful/title'
+  helper    :'helperful/title'
+  helper    Helperful::TitleHelper
+  helperful 'title'
+  helperful :title
+  helperful Helperful::TitleHelper
+
+
+The <tt>helperful</tt> methods accepts any parameter accepted by the original <tt>helper</tt> method.
+  
+  helper    'helperful/title', 'helperful/affiliations'
+  helperful :title, :affiliations
+
+
 See the Rails documentation for <tt>ActionController::Base#helper</tt> method
 for more details about how to include an helper into a Rails application.
 

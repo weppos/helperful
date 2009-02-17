@@ -25,7 +25,7 @@ require 'action_controller/test_process'
 require 'action_view/test_case'
 
 $:.unshift File.dirname(__FILE__) + '/../lib'
-require 'helperful'
+require    File.dirname(__FILE__) + '/../init.rb'
 
 RAILS_ROOT = '.'    unless defined? RAILS_ROOT
 RAILS_ENV  = 'test' unless defined? RAILS_ENV
