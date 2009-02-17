@@ -17,9 +17,15 @@
 
 Dir.glob(File.dirname(__FILE__) + '/helperful/*_helper.rb').each { |helper| require helper }
 require 'helperful/deprecations'
+require 'helperful/version'
 
 
 module Helperful
+  
+  NAME            = 'Helperful'
+  GEM             = 'helperful'
+  AUTHOR          = 'Simone Carletti <weppos@weppos.net>'
+  
 
   module ControllerMixin
 
