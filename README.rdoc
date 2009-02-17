@@ -32,6 +32,17 @@ Don't forget to add the namespace when including an helper from your controller.
 Moreover, the <tt>Helperful</tt> library provides a helpful method called <tt>helperful</tt>. 
 It aliases the standard Rails <tt>ActionController::Base#helper</tt> method with the exception that it automatically prepends the <tt>helperful</tt> namespace when necessary.
 
+  class MyController < ApplicationController
+
+    # include the title_helper
+    helperful :title
+
+    # include the title_helper passing the qualified the module name
+    helperful Helperful::TitleHelper
+
+  end
+
+
 The following lines are equivalent:
 
   helper    'helperful/title'
@@ -75,7 +86,7 @@ Provides an helper for managing page title in Rails views and layouts.
   # to all controllers and actions.
   class ApplicationController < ActionController::Base
 
-    helper 'helperful/title'
+    helperful :title
 
   end
 
