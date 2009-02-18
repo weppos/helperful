@@ -77,17 +77,42 @@ Once included, all helper methods are available in the View.
 This is a short description of all available helpers.
 Please refer to the documentation available at the beginning of any helper file for further details.
 
+=== Affiliations Helper
+
+Provides a set of helpers for working with online affiliations.
+
+The <tt>tradedoubler_verification_tag</tt> helper method returns the site verification tag required by {Tradedoubler}[http://www.tradedoubler.com/] to verify the publisher account ownership.
+
+  # In your template
+  <html>
+    <head>
+      <%= tradedoubler_verification_tag('00112233') %>
+    </head>
+    <body>
+      This is your page content.
+    </body>
+  </html>
+  
+  # Will produce the following output.
+  <html>
+    <head>
+      <%= tradedoubler_verification_tag('00112233') %>
+    </head>
+    <body>
+      <!-- TradeDoubler site verification 00112233 -->
+    </body>
+  </html>
+
+
 === Title Helper
 
 Provides an helper for managing page title in Rails views and layouts.
 
   # Include the helper in your controller.
   # You might want to include it in ApplicationController to make it available
-  # to all controllers and actions.
+  # always and everywhere in your templates.
   class ApplicationController < ActionController::Base
-
     helperful :title
-
   end
 
   # Now you can use set a title in your action
@@ -96,7 +121,9 @@ Provides an helper for managing page title in Rails views and layouts.
 
   # And print the title with a :site decorator in your layout.
   <html>
-    <title><%= title :site => 'My Cool Site!' %></title>
+    <head>
+      <title><%= title :site => 'My Cool Site!' %></title>
+    </head>
     <body>
       <%= yield %>
     </body>
