@@ -4,14 +4,18 @@ class ContentController < ActionController::Base
   def self.controller_name; "content"; end
   def self.controller_path; "content"; end
   
-  helper Helperful::ContentHelper
+  helperful "content"
   
   def sidebar
-    render :layout => "content"
+    render :layout => "sidebar"
   end
   
   def sidebar_concatenate
-    render :layout => "content"
+    render :layout => "sidebar"
+  end
+  
+  def has_content
+    render :layout => "has_content"
   end
   
   def rescue_action(e) raise end
@@ -32,17 +36,27 @@ class ContentTest < ActiveSupport::TestCase
 
   def test_sidebar
     get :sidebar
-    assert_equal expected_content_for_output, @response.body
+    assert_equal expected_sidebar_content_for_output, @response.body
   end
 
   def test_sidebar_concatenate
     get :sidebar_concatenate
-    assert_equal expected_content_for_output, @response.body
+    assert_equal expected_sidebar_content_for_output, @response.body
+  end
+
+  def test_has_content
+    get :has_content
+    assert_equal %Q{
+`one' has content: this is :one for :one\n
+`two' has content: this is 'two' for 'two'\n
+\n
+`four' has content: this is 'four' for :four\n
+`five' has content: this is 'five' for :five\n}, @response.body
   end
 
   protected
   
-    def expected_content_for_output
+    def expected_sidebar_content_for_output
 <<-EOS
 <title>This is the title</title>
 <div id="first">

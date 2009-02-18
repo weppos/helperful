@@ -1,0 +1,3 @@
+<% for name in [:one, 'two', :three, :four, :five] %>
+<% if has_content? name %>`<%= name %>' has content: <%= yield name %><% end %>
+<% end %>

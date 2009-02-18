@@ -19,6 +19,8 @@ module Helperful
   
   #
   # = Affiliations Helper
+  # 
+  # Provides a set of helpers for working with online affiliations.
   #
   module AffiliationsHelper
   
