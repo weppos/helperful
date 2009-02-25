@@ -1,7 +1,7 @@
 = Changelog
 
 
-== master
+== Release 0.2.1
 
 * FIXED: RubyGem fails to generate the documentation with the following error message "Unhandled special".
 
