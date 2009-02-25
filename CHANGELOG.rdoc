@@ -1,6 +1,11 @@
 = Changelog
 
 
+== master
+
+* FIXED: RubyGem fails to generate the documentation with the following error message "Unhandled special".
+
+
 == Release 0.2.0
 
 * ADDED: Added Helperful::ContentHelper module (subsequently renamed to Helperful::ContentHelper) with #sidebar helper for passing content_for :sidebar to the layout. Even if this is a really simple method, this method adds a bit of semantic meaning to common application usage of content_for for created sidebars.

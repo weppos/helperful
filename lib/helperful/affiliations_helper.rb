@@ -28,13 +28,13 @@ module Helperful
     # Returns the tradedoubler site verification tag for +publisher_id+.
     # 
     #   tradedoubler_verification_tag('123456')
-    #   # => <!-- TradeDoubler site verification 123456 -->
+    #   # => "<!-- TradeDoubler site verification 123456 -->"
     #   
     #   tradedoubler_verification_tag(123456)
-    #   # => <!-- TradeDoubler site verification 123456 -->
+    #   # => "<!-- TradeDoubler site verification 123456 -->"
     #   
     #   tradedoubler_verification_tag(nil)
-    #   # => <!-- TradeDoubler site verification  -->
+    #   # => "<!-- TradeDoubler site verification  -->"
     #
     def tradedoubler_verification_tag(publisher_id)
       "<!-- TradeDoubler site verification #{publisher_id.to_s} -->"
