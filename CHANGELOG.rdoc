@@ -1,9 +1,14 @@
 = Changelog
 
 
+== master
+
+* FIXED: The "Unhandled special" error message for real!
+
+
 == Release 0.2.1
 
-* FIXED: RubyGem fails to generate the documentation with the following error message "Unhandled special".
+* FIXED: RubyGems fails to generate the documentation with the following error message "Unhandled special".
 
 
 == Release 0.2.0
