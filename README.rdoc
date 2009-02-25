@@ -1,8 +1,5 @@
 = Helperful
 
-  http://code.simonecarletti.com/projects/show/helperful
-  http://github.com/weppos/helperful/
-
 Helperful aims to be a collection of useful and reusable Rails helpers.
 
 *WARNING*: This library has not been released yet. This package seems stable, but should be considered a development release. You should not use it in production.
@@ -160,3 +157,15 @@ Originally available at http://gist.github.com/3840.
 == Credits
 
 Author:: {Simone Carletti}[http://www.simonecarletti.com/] <weppos@weppos.net>
+
+
+== Resources
+
+* {Homepage}[http://code.simonecarletti.com/helperful]
+* {GitHub}[http://github.com/weppos/helperful]
+
+
+== License
+
+Copyright (c) 2008-2009 Simone Carletti, Helperful is released under the MIT license. 
+
