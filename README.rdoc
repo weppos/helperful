@@ -6,6 +6,31 @@ Helperful aims to be a collection of useful and reusable Rails helpers.
 Changes to specifications may occur at any time and without notice. For the full list of changes look at the CHANGELOG file.
 
 
+== Rails Installation
+
+=== As a Gem
+
+This is the preferred way to install Helperful and the best way if you want install a stable version.
+
+  $ gem install weppos-helperful --source http://gems.github.com
+
+You can specify the GEM dependency in your application environment.rb file:
+
+  Rails::Initializer.run do |config|
+    
+    # other configurations
+    
+    config.gem "weppos-helperful", :lib => "helperful", :source => "http://gems.github.com"
+  end
+
+
+=== As a Plugin
+
+This is the preferred way if you want to live on the edge and install a development version.
+
+  $ script/plugin install git://github.com/weppos/helperful.git
+
+
 == Getting Started
 
 Helper methods are grouped into different files according to their scope.
