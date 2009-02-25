@@ -24,9 +24,9 @@ module Helperful
   
   NAME            = 'Helperful'
   GEM             = 'helperful'
-  AUTHOR          = 'Simone Carletti <weppos@weppos.net>'
+  AUTHORS         = ['Simone Carletti <weppos@weppos.net>']
   
-
+  
   module ControllerMixin
 
     def helperful(*args, &block)
