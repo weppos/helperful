@@ -10,6 +10,8 @@
 
 * ADDED: Added #helperful method as shortcut for including helper modules from the Helperful namespace.
 
+* ADDED: Packaged library as a GEM.
+
 * CHANGED: Renamed TitleHelper to HelperfulTitleHelper to prevent conflicts with other common helpers (subsequently renamed to Helperful::TitleHelper).
 
 * CHANGED: Renamed all helper modules from HelperfulHelperName to Helperful::HelperName.
