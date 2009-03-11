@@ -151,6 +151,24 @@ The <tt>has_content?</tt> helper is a natural fulfillment for the original <tt>c
   <% has_content? :foo  # => true %>
   <% has_content? "foo" # => true %>
 
+
+=== Javascript Helper
+
+Provides a set of helpers for working with JavaScript in your views.
+
+The <tt>javascript_content_for</tt> helper combines the features of <tt>content_for</tt> and <tt>javascript_tag</tt> into a single helper.
+
+  <% javascript_content_for :head do %>
+    $("#id").hide();
+  <% end %>
+
+The code above looks like much more readable than the following one. Isn't it?
+
+  <% javascript_content_for :head do; javascript_tag do %>
+    $("#id").hide();
+  <% end; end %>
+
+
 === Title Helper
 
 Provides an helper for managing page title in Rails views and layouts.
