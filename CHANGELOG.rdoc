@@ -6,6 +6,8 @@
 
 * FIXED: has_content? raises an error when has_content isn't initialized (closes #179).
 
+* CHANGED: Changed status to alpha and removed development warning (closes #151).
+
 
 == Release 0.2.2
 
