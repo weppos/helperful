@@ -15,9 +15,11 @@
 #++
 
 
-require 'test/unit'
 require 'rubygems'
+gem     'rails', '2.2.2'
+
 require 'mocha'
+require 'test/unit'
 require 'active_support'
 require 'action_controller'
 require 'action_controller/cgi_ext'

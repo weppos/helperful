@@ -1,5 +1,9 @@
 = Changelog
 
+== master
+
+* ADDED: Added #javascript_content_for helper. #javascript_content_for combines the features of #content_for and #javascript_tag (closes #149).
+
 
 == Release 0.2.2
 
