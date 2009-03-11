@@ -91,6 +91,7 @@ module Helperful
     #   end
     #
     def has_content?(name)
+      @has_content ||= {}
       @has_content.key?(name.to_s)
     end
     

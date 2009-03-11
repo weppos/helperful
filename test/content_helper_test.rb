@@ -17,7 +17,11 @@ class ContentController < ActionController::Base
   def has_content
     render :layout => "has_content"
   end
-  
+
+  def has_content_is_called_alone
+    render :layout => false
+  end
+
   def rescue_action(e) raise end
 end
 
@@ -52,6 +56,12 @@ class ContentTest < ActiveSupport::TestCase
 \n
 `four' has content: this is 'four' for :four\n
 `five' has content: this is 'five' for :five\n}, @response.body
+  end
+
+  def test_has_content_is_called_alone
+    get :has_content_is_called_alone
+    assert_response :success
+    assert_equal('bar', @response.body)
   end
 
   protected

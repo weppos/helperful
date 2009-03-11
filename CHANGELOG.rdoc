@@ -4,6 +4,8 @@
 
 * ADDED: Added #javascript_content_for helper. #javascript_content_for combines the features of #content_for and #javascript_tag (closes #149).
 
+* FIXED: has_content? raises an error when has_content isn't initialized (closes #179).
+
 
 == Release 0.2.2
 
