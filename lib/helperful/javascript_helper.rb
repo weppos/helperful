@@ -74,7 +74,7 @@ module Helperful
     #
     def javascript_content_for(name, content_or_options_with_block = nil, html_options = {}, &block)
       if block_given?
-        content_for(name, javascript_tag(content_or_options_with_block, &block))
+        content_for(name, javascript_tag(capture(&block), content_or_options_with_block || {}))
       else
         content_for(name, javascript_tag(content_or_options_with_block, html_options))
       end
