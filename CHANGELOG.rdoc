@@ -1,6 +1,11 @@
 = Changelog
 
 
+== master
+
+* FIXED: GitHub now requires the Manifest file to be included in the repos.
+
+
 == Release 0.3.1
 
 * FIXED: #javascript_content_for doesn't properly concat output when called with block (closes #183).
