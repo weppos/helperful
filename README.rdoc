@@ -96,6 +96,10 @@ Once included, all helper methods are available in the View.
 This is a short description of all available helpers.
 Please refer to the documentation available at the beginning of any helper file for further details.
 
+=== Asset Tag Helper
+
+Provides a set of helpers for generating HTML that links views to assets such as images, javascripts, stylesheets, and feeds.
+
 === Affiliations Helper
 
 Provides a set of helpers for working with online affiliations.

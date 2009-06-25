@@ -3,6 +3,8 @@
 
 == master
 
+* ADDED: javascript and stylesheet AssetTag Helpers.
+
 * FIXED: GitHub now requires the Manifest file to be included in the repos.
 
 
