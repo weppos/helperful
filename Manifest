@@ -3,6 +3,7 @@ helperful.gemspec
 init.rb
 install.rb
 lib/helperful/affiliations_helper.rb
+lib/helperful/asset_tag_helper.rb
 lib/helperful/content_helper.rb
 lib/helperful/deprecations.rb
 lib/helperful/javascript_helper.rb
@@ -10,11 +11,13 @@ lib/helperful/title_helper.rb
 lib/helperful/version.rb
 lib/helperful.rb
 LICENSE.rdoc
+Manifest
 rails/init.rb
 Rakefile
 README.rdoc
 tasks/helperful_tasks.rake
 test/affiliations_helper_test.rb
+test/asset_tag_helper_test.rb
 test/content_helper_test.rb
 test/fixtures/content/has_content.html.erb
 test/fixtures/content/has_content_is_called_alone.html.erb
@@ -27,4 +30,3 @@ test/javascript_helper_test.rb
 test/test_helper.rb
 test/title_helper_test.rb
 uninstall.rb
-Manifest

@@ -3,7 +3,7 @@
 Helperful aims to be a collection of useful and reusable Rails helpers.
 
 
-== Rails Installation
+== Plugin Installation
 
 === As a Gem
 
@@ -14,9 +14,6 @@ This is the preferred way to install Helperful and the best way if you want inst
 You can specify the GEM dependency in your application environment.rb file:
 
   Rails::Initializer.run do |config|
-    
-    # other configurations
-    
     config.gem "weppos-helperful", :lib => "helperful", :source => "http://gems.github.com"
   end
 

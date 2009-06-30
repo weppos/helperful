@@ -1,14 +1,13 @@
+$:.unshift(File.dirname(__FILE__) + "/lib")
+
 require 'rubygems'
 require 'rake'
 require 'echoe'
-
-$:.unshift(File.dirname(__FILE__) + "/lib")
 require 'helperful'
 
 
 PKG_NAME    = ENV['PKG_NAME']    || Helperful::GEM
 PKG_VERSION = ENV['PKG_VERSION'] || Helperful::VERSION
-PKG_SUMMARY = "A collection of useful Rails helpers."
 PKG_FILES   = FileList.new("{lib,rails,tasks,test}/**/*") do |files|
   files.include %w(*.{rdoc,rb})
   files.include %w(Rakefile)
@@ -23,7 +22,7 @@ end
 Echoe.new(PKG_NAME, PKG_VERSION) do |p|
   p.author        = "Simone Carletti"
   p.email         = "weppos@weppos.net"
-  p.summary       = PKG_SUMMARY
+  p.summary       = "A collection of useful Rails helpers."
   p.description   = <<-EOD
     Helperful aims to be a collection of useful and reusable Rails helpers.
   EOD
