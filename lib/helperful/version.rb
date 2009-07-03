@@ -19,7 +19,7 @@ module Helperful
 
   module Version
     MAJOR = 0
-    MINOR = 4
+    MINOR = 5
     TINY  = 0
 
     STRING = [MAJOR, MINOR, TINY].join('.')
@@ -27,6 +27,6 @@ module Helperful
 
   VERSION         = Version::STRING
   STATUS          = 'alpha'
-  BUILD           = ''.match(/(\d+)/).to_a.first
+  BUILD           = nil
 
 end

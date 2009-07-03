@@ -1,7 +1,7 @@
 = Changelog
 
 
-== master
+== Release 0.5.0
 
 * REMOVED: ContentHelper#sidebar method. It was nothing special and just a wrapper for a simple Rails execution.
 

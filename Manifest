@@ -21,10 +21,7 @@ test/asset_tag_helper_test.rb
 test/content_helper_test.rb
 test/fixtures/content/has_content.html.erb
 test/fixtures/content/has_content_is_called_alone.html.erb
-test/fixtures/content/sidebar.html.erb
-test/fixtures/content/sidebar_concatenate.html.erb
 test/fixtures/layouts/has_content.html.erb
-test/fixtures/layouts/sidebar.html.erb
 test/helperful_test.rb
 test/javascript_helper_test.rb
 test/test_helper.rb
