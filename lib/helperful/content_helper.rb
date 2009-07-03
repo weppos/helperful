@@ -39,27 +39,6 @@ module Helperful
       end
     end
     
-    # 
-    # Evaluates the content of <tt>block</tt> and stores the result as <tt>content_for :sidebar</tt>.
-    # 
-    # Because <tt>content_for</tt> concatenates the block, you can call <tt>sidebar</tt> multiple time
-    # and yield all the final content once.
-    # 
-    # See <tt>ActionView::Helpers::CaptureHelper#content_for</tt> for the full API documentation.
-    # 
-    # ==== Examples
-    # 
-    #   <% sidebar do %>
-    #     <p>Sidebar</p>
-    #   <% end %>
-    #   
-    #   <%= yield :sidebar %>
-    #   # => <p>Sidebar</p>
-    # 
-    def sidebar(&block)
-      content_for :sidebar, &block
-    end
-    
     #
     # Returns <tt>true</tt> if <tt>name</tt> has any content,
     # in other workds if content_for(name) has ever been called.

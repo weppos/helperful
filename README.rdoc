@@ -127,19 +127,6 @@ The <tt>tradedoubler_verification_tag</tt> helper method returns the site verifi
 
 Provides a set of helpers for capturing and working with your page content in a more effective way.
 
-The <tt>sidebar</tt> helper method is a syntactic sugar addition to store content for your website sidebars.
-
-  <% sidebar do %>
-    <div>This is a sidebar module.</div>
-  <% end %>
-  <% sidebar do %>
-    <div>This is an other sidebar module.</div>
-  <% end %>
-  
-  <%= yield :sidebar # Produces the following output %>
-  <div>This is an other sidebar module.</div>
-  <div>This is a sidebar module.</div>
-
 The <tt>has_content?</tt> helper is a natural fulfillment for the original <tt>content_for</tt> helper.
 
   <% content_for :foo do %>

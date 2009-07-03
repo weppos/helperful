@@ -1,6 +1,11 @@
 = Changelog
 
 
+== master
+
+* REMOVED: ContentHelper#sidebar method. It was nothing special and just a wrapper for a simple Rails execution.
+
+
 == Release 0.4.0
 
 * ADDED: javascript and stylesheet AssetTag Helpers.

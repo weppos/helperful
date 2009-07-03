@@ -6,14 +6,6 @@ class ContentController < ActionController::Base
   
   helperful "content"
   
-  def sidebar
-    render :layout => "sidebar"
-  end
-  
-  def sidebar_concatenate
-    render :layout => "sidebar"
-  end
-  
   def has_content
     render :layout => "has_content"
   end
@@ -38,16 +30,6 @@ class ContentTest < ActiveSupport::TestCase
     @request.host = "test.host"
   end
 
-  def test_sidebar
-    get :sidebar
-    assert_equal expected_sidebar_content_for_output, @response.body
-  end
-
-  def test_sidebar_concatenate
-    get :sidebar_concatenate
-    assert_equal expected_sidebar_content_for_output, @response.body
-  end
-
   def test_has_content
     get :has_content
     assert_equal %Q{
@@ -63,19 +45,5 @@ class ContentTest < ActiveSupport::TestCase
     assert_response :success
     assert_equal('bar', @response.body)
   end
-
-  protected
-  
-    def expected_sidebar_content_for_output
-<<-EOS
-<title>This is the title</title>
-<div id="first">
-  <p>First Sidebar</p>
-</div>
-<div id="second">
-  <p>Second Sidebar</p>
-</div>
-EOS
-    end
     
 end
