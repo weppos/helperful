@@ -17,6 +17,7 @@
 
 require 'rubygems'
 gem     'rails', '2.2.2'
+gem     'mocha', '0.9.5'
 
 require 'mocha'
 require 'test/unit'

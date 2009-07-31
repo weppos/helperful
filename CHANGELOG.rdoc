@@ -1,28 +1,33 @@
 = Changelog
 
 
+== master
+
+* ADDED: `canonical_link_tag` helper provides the ability to generate Canonical Link tags used by search engine crawlers to determine the preferred url for a page (closes #255).
+
+
 == Release 0.5.0
 
-* REMOVED: ContentHelper#sidebar method. It was nothing special and just a wrapper for a simple Rails execution.
+* REMOVED: `sidebar` helper. It was nothing special and just a wrapper for a simple Rails execution.
 
 
 == Release 0.4.0
 
-* ADDED: javascript and stylesheet AssetTag Helpers.
+* ADDED: `javascript` and `stylesheet` helpers.
 
 * FIXED: GitHub now requires the Manifest file to be included in the repos.
 
 
 == Release 0.3.1
 
-* FIXED: #javascript_content_for doesn't properly concat output when called with block (closes #183).
+* FIXED: `javascript_content_for` doesn't properly concat output when called with block (closes #183).
 
 
 == Release 0.3.0
 
-* ADDED: Added #javascript_content_for helper. #javascript_content_for combines the features of #content_for and #javascript_tag (closes #149).
+* ADDED: Added `javascript_content_for helper`. `javascript_content_for` combines the features of `content_for` and `javascript_tag` (closes #149).
 
-* FIXED: has_content? raises an error when has_content isn't initialized (closes #179).
+* FIXED: `has_content?` raises an error when has_content isn't initialized (closes #179).
 
 * CHANGED: Changed status to alpha and removed development warning (closes #151).
 
