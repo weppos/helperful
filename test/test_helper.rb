@@ -16,8 +16,14 @@
 
 
 require 'rubygems'
-gem     'rails', '2.2.2'
-gem     'mocha', '0.9.5'
+gem     'rails', '2.3.3'
+gem     'mocha', '0.9.7'
+
+# Remember! Due to some Mocha internal changes,
+# Rails 2.2.x requires Mocha 0.9.5 and
+# Rails 2.3.x requires Mocha 0.9.7 
+# gem     'rails', '2.2.2'
+# gem     'mocha', '0.9.5'
 
 require 'mocha'
 require 'test/unit'
@@ -35,6 +41,7 @@ RAILS_ENV  = 'test' unless defined? RAILS_ENV
 
 ActionController::Base.logger = nil
 ActionController::Routing::Routes.reload rescue nil
+
 
 # Unit tests for Helpers are based on unit tests created and developed by Rails core team.
 # See action_pack/test/abstract_unit for more details.

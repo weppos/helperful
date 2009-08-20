@@ -5,6 +5,8 @@
 
 * ADDED: `canonical_link_tag` helper provides the ability to generate Canonical Link tags used by search engine crawlers to determine the preferred url for a page (closes #255).
 
+* CHANGED: run test against Rails 2.3.x but ensure compatibility with Rails 2.2.x.
+
 
 == Release 0.5.0
 

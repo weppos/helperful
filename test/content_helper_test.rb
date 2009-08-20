@@ -20,8 +20,11 @@ end
 ContentController.view_paths = [ File.dirname(__FILE__) + "/fixtures/" ]
 
 
-class ContentTest < ActiveSupport::TestCase
-  
+class ContentTest < ActionController::TestCase
+
+  # Compatibility workaround for Rails ~> 2.2.0
+  tests ContentController
+
   def setup
     @controller = ContentController.new
     @request    = ActionController::TestRequest.new
