@@ -16,7 +16,7 @@
 
 
 require 'rubygems'
-gem     'rails', '2.3.3'
+gem     'rails', '~>2.3.0'
 gem     'mocha', '0.9.7'
 
 # Remember! Due to some Mocha internal changes,

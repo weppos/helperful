@@ -14,13 +14,19 @@ Helperful aims to be a collection of useful and reusable Rails helpers.
 === As a Gem
 
 This is the preferred way to install Helperful and the best way if you want install a stable version.
+The GEM is hosted on {Gemcutter}[http://gemcutter.org/gems/helperful].
 
-  $ gem install weppos-helperful --source http://gems.github.com
+  $ gem install helperful --source http://gemcutter.org
 
-You can specify the GEM dependency in your application environment.rb file:
+With Rails >= 2.2, you can specify the GEM dependency in your environment.rb file so that Rails will automatically check the requirement on startup.
 
   Rails::Initializer.run do |config|
-    config.gem "weppos-helperful", :lib => "helperful", :source => "http://gems.github.com"
+    
+    # other configurations
+    # ...
+    
+    config.gem "helperful", :source => "http://gemcutter.org"
+
   end
 
 

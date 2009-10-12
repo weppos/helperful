@@ -1,6 +1,11 @@
 = Changelog
 
 
+== next maintenance
+
+* CHANGED: GitHub Gem Building is Defunct. The gem is now hosted on Gemcutter (see http://github.com/blog/515-gem-building-is-defunct)
+
+
 == Release 0.5.1
 
 * ADDED: `canonical_link_tag` helper provides the ability to generate Canonical Link tags used by search engine crawlers to determine the preferred url for a page (closes #255).
