@@ -194,15 +194,16 @@ Provides an helper for managing page title in Rails views and layouts.
 Originally available at http://gist.github.com/3840.
 
 
-== Credits
+== Author
 
-Author:: {Simone Carletti}[http://www.simonecarletti.com/] <weppos@weppos.net>
+* {Simone Carletti}[http://www.simonecarletti.com] <weppos@weppos.net>
 
 
 == Resources
 
 * {Homepage}[http://code.simonecarletti.com/helperful]
-* {GitHub}[http://github.com/weppos/helperful]
+* {Source}[http://github.com/weppos/helperful]
+* {Bugs & Features}[http://github.com/weppos/helperful/issues]
 
 
 == License
