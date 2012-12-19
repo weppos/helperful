@@ -1,3 +1,13 @@
+= Discontinued
+
+I decided to discontinue the development of this library to concentrate my efforts on other projects.
+
+Some of the helpers available in this library have been included in Rails itself or are no longer applicable against the Rails 3 and 4 releases.
+If you are interested in some specific helper, just copy and paste the code in your app.
+
+Now back to your original README content...
+
+
 = Helperful
 
 Helperful aims to be a collection of useful and reusable Rails helpers.
